@@ -1,6 +1,0 @@
-<launch>
-    <!-- This version uses the openai_ros environments -->
-    <rosparam command="load" file="$(find crazyflie_openai)/config/cf_openai_qlearn_params.yaml" />
-    <!-- Launch the training system -->
-    <node pkg="crazyflie_openai" name="cf_goto_qlearn" type="cf_start_qlearning.py" output="screen"/>
-</launch>
